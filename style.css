@@ -126,7 +126,7 @@ body {
 .flower-left {
     left: 6%;
 
-    bottom: 7%;
+    bottom: 10%;
 
     animation:
         floatDecoration 4.2s ease-in-out infinite;
@@ -1734,6 +1734,12 @@ p {
 
 @media (max-width: 800px) {
 
+    .old-age-joke {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
     .screen {
         padding: 15px;
     }
@@ -2239,7 +2245,7 @@ p {
 .old-age-joke {
     margin: 20px auto;
 
-    width: min(500px, 90vw);
+    width: min(500px, 100%);
 
     padding: 20px;
 
@@ -2356,7 +2362,7 @@ p {
 .completion-badge {
     display: none;
 
-    margin-top: 10px;
+    margin: 10px auto 0;
 
     padding: 5px 10px;
 
@@ -2440,7 +2446,7 @@ p {
 
 
 .surprise-card.completed .completion-badge {
-    display: inline-block;
+    display: block;
 
     opacity: 1;
 
@@ -2597,10 +2603,10 @@ p {
 
 .letter-paper {
     font-family: "Caveat", cursive;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .letter-text {
     font-family: "Caveat", cursive;
-    font-size: 26px;
+    font-size: 18px;
 }
