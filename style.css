@@ -2617,15 +2617,16 @@ p {
     }
 
     .surprise-card.completed::after {
-        top: 6px;
-        right: 6px;
-        width: 18px;
-        height: 18px;
-        font-size: 10px;
+        top: 4px;
+        right: 4px;
+        width: 16px;
+        height: 16px;
+        font-size: 9px;
     }
 
     .completion-badge {
-        font-size: 10px;
-        padding: 4px 8px;
+        font-size: 9px;
+        padding: 3px 6px;
+        margin-top: 6px;
     }
 }
