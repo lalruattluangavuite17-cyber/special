@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
+
+    <title>A Little Surprise 🎀</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         DECORATIONS
+    ========================================== -->
+
+    <img src="bow-1.png" class="decor bow-left" alt="">
+    <img src="bow-2.png" class="decor bow-right" alt="">
+
+    <img src="flower-2.png" class="decor flower flower-left" alt="">
+    <img src="flower-3.png" class="decor flower flower-right" alt="">
+
+
+    <!-- =========================================
+         1. INTRO
+    ========================================== -->
+
+    <section class="screen active" id="introScreen">
+
+        <div class="intro-wrap">
+
+            <div class="tiny-label">
+                ✦ A LITTLE SURPRISE ✦
+            </div>
+
+            <h1>
+                I have a little<br>
+                <span>surprise</span> for you 🎀
+            </h1>
+
+            <p class="intro-subtitle">
+                But first... I need to ask you something.
+            </p>
+
+            <div class="yes-no-area">
+
+                <button id="yesBtn" class="yes-btn">
+                    YES 💗
+                </button>
+
+                <button id="noBtn" class="no-btn">
+                    NO 😭
+                </button>
+
+            </div>
+
+            <p id="noMessage" class="no-message"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         2. SPECIAL MESSAGE
+    ========================================== -->
+
+    <section class="screen" id="specialScreen">
+
+    <div class="center-content">
+
+        <div class="sparkles">✦ ✧ ✦ ✧ ✦</div>
+
+        <h2>
+            I knew you'd say yes 💗
+        </h2>
+
+        <p>
+            Okay... your surprise starts now. 🎀
+        </p>
+
+        <p class="soft-text">
+            There are a few things waiting for you.
+        </p>
+
+        <button class="pink-btn" id="specialContinue">
+            Continue ✨
+        </button>
+
+    </div>
+
+</section>
+
+
+    <!-- =========================================
+         3. HAPPY BIRTHDAY
+    ========================================== -->
+
+    <section class="screen birthday-screen" id="birthdayScreen">
+
+        <div class="birthday-content">
+
+            <div class="birthday-top">
+                🎀 ✿ ✧ ✿ 🎀
+            </div>
+
+            <div class="birthday-word">
+                HAPPY
+            </div>
+
+            <div class="birthday-word">
+                BIRTHDAY
+            </div>
+
+            <div class="birthday-bottom">
+                🎂💗🎂
+            </div>
+
+            <p>
+                Today is your special day.
+            </p>
+
+            <button class="pink-btn" id="birthdayContinue">
+                Your surprises await 🎁
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         4. ONE SURPRISE AT A TIME
+    ========================================== -->
+
+    <section class="screen" id="surpriseScreen">
+
+        <div class="surprise-panel">
+
+            <div class="tiny-label">
+    ✦ ONE SURPRISE AT A TIME ✦
+        </div>
+
+<h2>
+    Choose one 🎁
+</h2>
+
+<p class="soft-text">
+    Tap something and see what I prepared.
+</p>
+
+<div class="progress-counter">
+    ✦ <span id="completedCount">0</span> / 5 SURPRISES COMPLETED ✦
+</div>
+
+            <div class="surprise-grid">
+
+                <!-- ENVELOPE -->
+
+                <button class="surprise-card" id="envelopeItem">
+
+    <div class="surprise-image envelope-image">
+        <img src="envelope.png" alt="">
+    </div>
+
+    <div class="surprise-name">
+        Open Me 💌
+    </div>
+
+    <div class="completion-badge" id="envelopeComplete">
+        ✓ COMPLETED
+    </div>
+
+</button>
+
+
+                <!-- FLOWER -->
+
+                <button class="surprise-card" id="flowerItem">
+
+    <div class="surprise-image">
+        <img src="flower-2.png" alt="">
+    </div>
+
+    <div class="surprise-name">
+        A Flower 🌸
+    </div>
+
+    <div class="completion-badge" id="flowerComplete">
+        ✓ COMPLETED
+    </div>
+
+</button>
+
+                <!-- GIFT CHOICE -->
+
+                <button class="surprise-card" id="choiceItem">
+
+    <div class="surprise-image">
+        <img src="gift.png" alt="Gift">
+    </div>
+
+    <div class="surprise-name">
+        Pick One 👀
+    </div>
+
+    <div class="completion-badge" id="choiceComplete">
+        ✓ COMPLETED
+    </div>
+
+</button>
+
+                <!-- BOOK -->
+
+                <button class="surprise-card" id="bookItem">
+
+    <div class="surprise-image">
+        <img src="book.png" alt="">
+    </div>
+
+    <div class="surprise-name">
+        Something Special 📖
+    </div>
+
+    <div class="completion-badge" id="bookComplete">
+        ✓ COMPLETED
+    </div>
+
+</button>
+
+                <!-- GAMES -->
+<button class="surprise-card" id="gamesItem">
+
+    <div class="surprise-image">
+        <img src="game.png" alt="Games">
+    </div>
+
+    <div class="surprise-name">
+        Little Games 🎀
+    </div>
+
+    <div class="completion-badge" id="gamesComplete">
+        ✓ COMPLETED
+    </div>
+
+</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     GAMES MENU
+========================================== -->
+
+<section class="screen" id="gamesScreen">
+
+    <div class="choice-panel">
+
+        <div class="tiny-label">
+            ✦ LITTLE GAMES ✦
+        </div>
+
+        <h2>
+            Birthday Game Time 🎮
+        </h2>
+
+        <p class="soft-text">
+            Okay... let's see what you've got 👀
+        </p>
+
+
+        <div class="game-menu">
+
+            <button class="game-card" id="loveTapItem">
+
+                <div class="game-icon">
+                    💗
+                </div>
+
+                <div class="game-title">
+                    LOVE TAP
+                </div>
+
+                <div class="game-description">
+                    Catch the heart and reach your age!
+                </div>
+
+            </button>
+
+
+            <button
+                class="back-btn"
+                id="backFromGames"
+            >
+                ← Back to surprises
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     LOVE TAP GAME
+========================================== -->
+
+<section class="screen" id="loveTapScreen">
+
+    <div class="game-screen">
+
+        <div class="tiny-label">
+            ✦ LOVE TAP 💗 ✦
+        </div>
+
+        <h2>
+            Catch the Heart!
+        </h2>
+
+        <p class="soft-text">
+            Tap the heart before it runs away!
+        </p>
+
+
+        <div class="game-stats">
+
+            <div>
+                AGE
+                <strong id="ageScore">0</strong>
+                /
+                <strong id="targetAge">24</strong>
+            </div>
+
+            <div>
+                COMBO
+                <strong id="comboScore">0</strong>
+            </div>
+
+        </div>
+        
+        <div id="gameCountdown"></div>
+
+        <div id="loveTapArena">
+
+            <button
+                id="movingHeart"
+                class="moving-heart"
+            >
+                💗
+            </button>
+
+            <div id="tapFeedback"></div>
+
+        </div>
+
+
+        <p id="gameHint" class="game-hint">
+            Catch it! 👀
+        </p>
+
+
+        <button
+            class="back-btn"
+            id="quitLoveTap"
+        >
+            ← Back to games
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     LOVE TAP WIN SCREEN
+========================================== -->
+
+<section class="screen" id="loveTapWinScreen">
+
+    <div class="game-win">
+
+        <div class="win-confetti">
+            🎀 ✨ 🎀 ✨ 🎀
+        </div>
+
+        <div class="final-age">
+            24!
+        </div>
+
+        <h2>
+            OKAYYY GRANDMA 😭
+        </h2>
+
+        <p>
+            STOP TAPPING!!
+        </p>
+
+        <div class="old-age-joke">
+
+            🦴<br>
+
+            Your back has officially
+            entered retirement.
+
+            <br><br>
+
+            👵 <strong>OLD LADY MODE UNLOCKED</strong>
+
+            <br><br>
+
+            Please collect your
+            walking stick at the exit 😂
+
+        </div>
+
+        <button
+            class="pink-btn"
+            id="backToGamesAfterWin"
+        >
+            I'M ONLY 24 😭
+        </button>
+
+    </div>
+
+</section>
+
+
+    <!-- =========================================
+         5. ENVELOPE
+    ========================================== -->
+
+    <section class="screen" id="envelopeScreen">
+
+        <div class="scene-content">
+
+            <p class="scene-caption">
+                There's a little something inside...
+            </p>
+
+            <div class="envelope-wrap">
+
+                <img
+                    src="envelope.png"
+                    id="envelopeImage"
+                    class="big-envelope"
+                    alt="Envelope"
+                >
+
+            </div>
+
+            <button
+                class="pink-btn"
+                id="openEnvelopeBtn"
+            >
+                OPEN ME 💌
+            </button>
+
+
+            <div
+                class="envelope-message"
+                id="envelopeMessage"
+            >
+
+                <div class="message-sparkle">
+                    ✦ 💗 ✦
+                </div>
+
+                <h2>
+                    A Special Message
+                </h2>
+
+                <p>
+                    I hope your birthday is filled
+                    with happiness, laughter and
+                    beautiful memories.
+                </p>
+
+                <p>
+                    You deserve a really good day. 🌸
+                </p>
+
+                <button class="back-btn" id="backFromEnvelope">
+                    ← Back to surprises
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         6. FLOWER
+    ========================================== -->
+
+    <section class="screen" id="flowerScreen">
+
+        <div class="scene-content flower-scene">
+
+            <p class="scene-caption">
+                Here's a flower for you... 🌸
+            </p>
+
+            <div class="flower-stage">
+
+                <img
+                    src="flower-2.png"
+                    class="side-flower left-flower"
+                    alt=""
+                >
+
+                <img
+                    src="flower-1.png"
+                    class="main-flower"
+                    alt=""
+                >
+
+                <img
+                    src="flower-3.png"
+                    class="side-flower right-flower"
+                    alt=""
+                >
+
+            </div>
+
+            <h2>
+                A little flower for you 🌸
+            </h2>
+
+            <p>
+                Just a tiny gift for your special day.
+            </p>
+
+            <button class="back-btn" id="backFromFlower">
+                ← Back to surprises
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         7. PICK A GIFT
+    ========================================== -->
+
+    <section class="screen" id="choiceScreen">
+
+        <div class="choice-panel">
+
+            <div class="tiny-label">
+                ✦ YOUR TURN ✦
+            </div>
+
+            <h2>
+                Pick ONE 🎁
+            </h2>
+
+            <p class="soft-text">
+                Choose whichever one you want.
+            </p>
+
+            <p class="small-note">
+                Your choice will be saved so I know what you picked. 👀
+            </p>
+
+
+            <div class="choice-grid">
+
+                <button class="choice-btn" data-choice="Handshake">
+
+                    <div class="choice-icon">🤝</div>
+
+                    <div>Handshake</div>
+
+                </button>
+
+
+                <button class="choice-btn" data-choice="Playful Slap">
+
+                    <div class="choice-icon">👋</div>
+
+                    <div>Playful Slap</div>
+
+                </button>
+
+
+                <button class="choice-btn" data-choice="Sweet 10">
+
+                    <div class="choice-icon">🔟</div>
+
+                    <div>Sweet 10</div>
+
+                </button>
+
+
+                <button class="choice-btn" data-choice="Chocolate">
+
+                    <div class="choice-icon">🍫</div>
+
+                    <div>Chocolate</div>
+
+                </button>
+
+            </div>
+
+
+            <div id="choiceResult" class="choice-result"></div>
+
+
+            <button
+                class="back-btn hidden"
+                id="backFromChoice"
+            >
+                ← Back to surprises
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         8. BOOK PAGE
+    ========================================== -->
+
+    <section class="screen" id="bookScreen">
+
+        <div class="book-scene">
+
+            <div class="book-title">
+                ✦ A FEW MEMORIES ✦
+            </div>
+
+
+            <div class="book-wrapper">
+
+                <img
+                    src="book.png"
+                    class="book-background"
+                    alt="Memory book"
+                >
+
+
+                <!-- PHOTO 1 -->
+
+                <div class="photo-frame frame-one">
+
+                    <img src="photo-1.jpeg" alt="Photo-1" class="book-photo">
+
+                </div>
+
+
+                <!-- PHOTO 2 -->
+
+                <div class="photo-frame frame-two">
+
+                    <img src="photo-2.jpeg" alt="Photo-2" class="book-photo">
+
+                </div>
+
+
+                <!-- PHOTO 3 -->
+
+                <div class="photo-frame frame-three">
+
+                    <img src="photo-3.jpeg" alt="Photo-3" class="book-photo">
+                </div>
+
+            </div>
+
+
+            <button
+                class="pink-btn book-continue"
+                id="bookContinue"
+            >
+             ← Back to surprises
+                
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         9. FINAL LETTER
+    ========================================== -->
+
+    <section class="screen" id="letterScreen" style="display: none;">
+
+        <div class="letter-container">
+
+            <div class="letter-top-decoration">
+                ✿ 🎀 ✿
+            </div>
+
+            <div class="tiny-label">
+                ✦ ONE LAST THING ✦
+            </div>
+
+            <h2>
+                A Letter For You 💌
+            </h2>
+
+
+            <div class="letter-paper">
+
+                <div class="letter-heart">
+                    💗
+                </div>
+
+                <p class="letter-text">
+                    Dear Kross,
+                </p>
+
+                <p class="letter-text">
+                    Happy Birthday! Vawiin ni hi nuam tak in lo hmang zel la,
+                    lo dam rei zel la, midangte tan malsawmna lo ni zel
+                    bawk ang che. He thil hote hi ka gift ah min lo ngaihsak
+                    dawn nia, ka mamawh laia ka tana i lo awm zel avangin 
+                    ka lawmthu sawina angah min lo pawmsak hram bawk donnia.
+                    "I know it's not perfect but i made it with all my might for you,
+                    Thank You Kross"
+                </p>
+
+                <div class="letter-signature">
+                    — From your friend 🎀
+                </div>
+
+            </div>
+
+
+            <div class="final-wish">
+                Happy Birthday once again! 🎂🌸
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         TRANSITION
+    ========================================== -->
+
+    <div id="transitionOverlay">
+
+        <div class="transition-content">
+
+            <div class="transition-symbol">
+                ✦
+            </div>
+
+            <div class="transition-text">
+                ✨
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
